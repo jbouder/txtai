@@ -504,7 +504,7 @@ class Embeddings:
         return (
             path
             and (os.path.exists(f"{path}/config") or os.path.exists(f"{path}/config.json"))
-            # and (os.path.exists(f"{path}/embeddings") or os.path.exists(f"{path}/scoring"))
+            and (os.path.exists(f"{path}/embeddings") or os.path.exists(f"{path}/scoring"))
         )
 
     def load(self, path=None, cloud=None, **kwargs):
